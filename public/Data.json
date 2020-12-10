@@ -1,0 +1,93 @@
+ 
+{
+    "main": {
+        "name": "Bibek Lamichhane",
+        "bio" : "Hey, I'm Bibek, a frontend designer 😎  ,developer 🤠 ,painter🖌️. I'm currently studying IT(final year) 🧐 .",
+        
+        "address":{
+            "street":"Fake Street",
+            "city":"London",
+            "country": "Nepal,"
+        },
+        "phone":"9898989898",
+        "email" : "vibekkkkkk@com",
+        "work" : "Web Developer"
+       
+    },
+    "navbar":[
+        {
+            "id":1,
+            "title":"Home",
+            "link":"#"
+        },
+        {
+            "id":2,
+            "title":"About",
+            "link":"#about"
+        },
+        {
+            "id":3,
+            "title":"Skills",
+            "link":"#skills"
+        },
+        {
+            "id":4,
+            "title":"Resume",
+            "link" : "#resume"
+        },
+        {
+            "id":5,
+            "title":"Projects",
+            "link" : "#projects"
+        },
+        {
+            "id":6,
+            "title":"Blog",
+            "link" : "www.bulubulu.com"
+        }
+    ],
+     "skills":[
+        {
+            "title":"HTML",
+            "icon":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.iconfinder.com%2Ficons%2F939737%2Fhtml5_icon_%25E2%2580%25A2_html_icon&psig=AOvVaw17P3Emc4DvxqnrnGolAm4g&ust=1607519183418000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOCsg-W5vu0CFQAAAAAdAAAAABAD",
+            "level":"70"
+    
+        },
+        {
+            "title":"CSS",
+            "icon":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Fcss_919826&psig=AOvVaw13OKLAKaTHM34S6HOihWse&ust=1607519216093000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCICr3vS5vu0CFQAAAAAdAAAAABAD",
+            "level":"70"
+        },
+        {
+            "title":"React",
+            "icon":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FReact_(web_framework)&psig=AOvVaw22IKhCvaRidwcdCDTtwxXn&ust=1607519246599000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMiphoG6vu0CFQAAAAAdAAAAABAD",
+            "level":"60"
+        },
+        {
+            "title":"Node",
+            "icon":"https://www.google.com/url?sa=i&url=https%3A%2F%2Ficonscout.com%2Ficon%2Fnode-js&psig=AOvVaw1KJAklrx62RyvZtP5JuyZw&ust=1607519279441000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCODCy5C6vu0CFQAAAAAdAAAAABAD",
+            "level":"50"
+        }
+    ],
+   
+    "education":[{
+        "id":1,
+        "title":"School",
+        "description":"Quality English School"
+    },
+    {
+        "id":2,
+        "title":"Bachelor",
+        "description":"Samriddhi college(TU Affliated)"
+    }
+    ],
+    "work":[
+        {
+            "id":1,
+            "title":"ABC company",
+            "description":"Junior Development"
+        }
+    ]
+    
+
+}

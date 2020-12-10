@@ -1,0 +1,51 @@
+.contact{
+    background-color:rgb(235, 203, 203);
+    height: fit-content;
+    margin: 7px 5px ;
+    padding: 40px;
+    color: rgb(104, 84, 94);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+
+}
+.contact__head{
+    display: flex;
+    justify-content: center;
+}
+.contact >form > label{
+    margin: 10px 5px;
+    padding: 0 ;
+    font-size: 18px;
+    font-family: cursive;
+    
+}
+.contact >form > input{
+    margin: 30px 0px;
+    border: 1px solid rgb(192, 118, 118);
+    height: 20px;
+    padding: 2px;
+    background-color: rgb(181, 179, 182);
+
+
+}
+.contact >form > textarea{
+    margin: 30px 0px;
+    border: 1px solid rgb(192, 118, 118);
+    background-color: rgb(181, 179, 182);
+}
+
+.contact >form > button{
+    color: white;
+    border: 1px solid white;
+    padding: 5px 20px;
+    font-size: 15px;
+    background-color: rgb(104, 84, 94);
+    border-radius: 5px;
+
+}
+.contact >form > button:hover{
+    color: black;
+    background-color: white;
+}

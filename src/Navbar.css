@@ -1,0 +1,50 @@
+.navbar{
+    padding:5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    background: white;
+  
+
+}
+.navbar-imageLogo{
+    height: 30px;
+    object-fit: contain;
+    margin-left: 60px;
+    
+}
+
+.navbar-list{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+   
+}
+@keyframes shadow {
+    50% {box-shadow: 10px 10px 10px #D68D69;}
+  }
+.navbar-list > li{
+    margin:0px 20px;
+    padding: 5px 15px;
+    border-bottom: 1px solid #F7DBA7;
+    border-radius: 10px;
+    width: 60px;
+    justify-content: center;
+    display: flex;
+    
+   
+}
+.navbar-list > li:hover{
+    transform: scale(1.05);
+    background-color: #F7DBA7;
+    animation: shadow 5s infinite ;
+}
+
+.navbar-listItem{
+    text-decoration: none ;
+    color: #C57B57 ;
+
+}

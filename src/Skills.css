@@ -1,0 +1,33 @@
+.skills{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    color: #C57B57;
+}
+.skills__title{
+    width: fit-content;
+}
+.skills__title > hr{
+    border:2px solid #C57B57;
+    border-radius: 2px;
+    margin-top: -20px;
+
+}
+.skill{
+    display: flex;
+    flex-direction: row;
+}
+.skills__container{
+    
+    width: 300px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 20px 10px;
+    
+}
+.skills__level{
+    width: 70%;
+    height:25px;
+    background: rgb(5, 5, 5);
+}

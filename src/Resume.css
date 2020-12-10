@@ -1,0 +1,67 @@
+.resume-topic{
+    display: flex;
+    margin: 10px;
+    padding: 5px;
+    background-color: rgb(250, 242, 242);
+
+
+}
+
+.resume-topicContainer{
+    padding-right: 10px;
+    margin: 0px 20px;
+    flex:0.1;
+    align-items: center;
+    border-right: 1px solid rgb(192, 138, 138);
+
+    
+}
+
+.resume-titleContainer>h2{
+    color: #C57B57;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.resume-titleContainer{
+   padding: auto;
+   margin: auto;
+    align-items: center;
+    width: fit-content;
+}
+
+
+.resume-titleContainer > hr {
+    border: 2px solid #C57B57;
+    border-radius: 10px;
+    margin-top:-20px;
+}
+.resume-titles{
+    flex: 0.9;
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+}
+.eduItem{
+    list-style: none;
+}
+.resume-titles>h3{
+    color: #C57B57;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    font-size: 25px;
+    margin-top: 20px;
+
+}
+.resume-description{
+    font-family: 'Dancing Script', cursive;
+    color: #C57B57;
+    margin-left:10px;
+}
+
+.resume>hr{
+    
+    border: 2px solid rgb(199, 134, 134);
+    margin: -7px 5px;
+    border-radius: 5px;
+}

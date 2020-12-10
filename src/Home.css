@@ -1,0 +1,84 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@600&display=swap'); */
+.home{
+    height: 100vh;
+}
+.home-banner{
+    display:flex;
+    align-items: center;
+    color: #C57B57 ;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    height:500px;
+    
+}
+
+.home-bannerText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex:0.7;
+}
+.home-bannerText>button{ 
+    padding: 4px 30px;
+    color: white;
+    border: 1px solid white;
+    background-color: #C57B57;
+    border-radius: 10px;
+}
+.home-bannerText>button:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+ }
+
+.home-bannerHeadline  {
+    font-size: 50px !important;
+    
+}
+h3 {
+    margin:10px;
+    font-size: 20px;
+}
+p{
+    font-size: 18px;
+}
+
+.linkArrow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 40px;
+    margin-top:-30px;
+    font-size: inherited;
+
+
+
+}
+.arrowDown{
+    color: #9E6A50 ;
+    z-index: 5;
+    
+   
+    
+    
+}
+.arrowDown:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+   
+    
+    
+}
+.navbar-social{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-left:auto;
+    margin-right: 30px;
+    margin-top:-350px;
+    
+}
+.navbar-socialList{
+    color: #D68D69;
+}
+.navbar-socialList:hover{
+    color: #9E6A50;
+}
