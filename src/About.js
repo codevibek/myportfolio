@@ -13,7 +13,7 @@ const About = ({main}) => {
 
     }
     return (
-        <div className="about">
+        <div className="about" id="about">
             <div className="about__avatar">
                 <div className="about__avatarContainer">
                     <img alt="Bibek Lamichhane" src={avatar} />

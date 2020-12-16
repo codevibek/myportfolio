@@ -1,22 +1,23 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
-import logo from "./logo.png"
 
-const Navbar = ({navbar}) => {
+import MenuIcon from '@material-ui/icons/Menu';
+
+const Navbar = ({navbar,handleHamClick}) => {
+
+
+   
     return (
         <div className="navbar">
-            <div className="navbar-image">
-                <Link to="#">
-                    <img src={logo} alt="logo" className="navbar-imageLogo"/>
-
-                </Link>
+            <div className="navbar-button">
+                   <button>Suprise</button> 
             </div>
             <nav>
                 <ul className="navbar-list">
                     {navbar?.map(nav=>{
                         const {id,link,title} = nav
-                        return( <li key={id}><Link className="navbar-listItem" to={link}>{title}</Link></li>
+                        return( <li key={id}><a className="navbar-listItem" href={link}>{title}</a></li>
                         )
                     })}
                     {/* <li ><Link className="navbar-listItem" to="/">Home</Link></li>
@@ -28,7 +29,9 @@ const Navbar = ({navbar}) => {
 
                 </ul>
             </nav>
-            
+            <div className="navbar-ham" onClick={handleHamClick}>
+                <MenuIcon />
+            </div>
         </div>
     )
 }

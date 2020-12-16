@@ -4,13 +4,16 @@ import Home from './Home'
 import About from'./About'
 import Skills from './Skills'
 import Resume from './Resume'
-import Contact from './Contact'
-import Footer from './Footer'
+import "./App.css"
+
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import axios from 'axios'
+import Sidebar from './Sidebar'
+import Lower from './Lower'
 
 function App() {
   const [data, setData] = useState('')
+  const [clicked, setClicked] = useState('false')
 
   const getData = () => {
     axios.get('Data.json')
@@ -20,6 +23,12 @@ function App() {
       
     })
   }
+  const handleHamClick = (e) => {
+    e.preventDefault()
+    const isclicked = !clicked
+    setClicked(isclicked)
+    console.log(clicked)
+}
   useEffect(()=>{
     getData()
     
@@ -33,14 +42,14 @@ function App() {
     <div className="App">
       
       <Router>
-      <Navbar navbar={navbar}/>
-      <Home  main={main} />
+      <Navbar navbar={navbar} handleHamClick={handleHamClick}/>
+      <Sidebar navbar={navbar} clicked={clicked}/>
+      {/* <Home  main={main} /> */}
       <About main={main}/>
       
       <Resume education={education} work={work}/>
-      <Skills skills={skills}/>
-      <Contact />
-      <Footer/>
+      <Lower skills={skills} />
+      
       
         <Switch>
           <Route path="#about">

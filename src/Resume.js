@@ -4,7 +4,7 @@ import './Resume.css'
 
 const Resume = ({education,work}) => {
     return (
-        <div className="resume">
+        <div className="resume" id="resume">
             <div className="resume-topic">
                 <div className="resume-topicContainer">
                     <div className="resume-titleContainer">
@@ -14,14 +14,14 @@ const Resume = ({education,work}) => {
                 </div>
                 <div className="resume-titles">
                 {education?.map(level=>{
-                    const{id,title,description}=level
+                    const{id,title,description,division,end_year}=level
                     
                     return(
                        <li className="eduItem" key={id}>
                     <h3 className="resume-title">
                        {title}
                     </h3>
-                    <p className="resume-description">{description}</p> 
+                    <p className="resume-description">{description} 🏫  {division} 📚  {end_year}</p> 
                     </li>
                     
                     )
@@ -64,11 +64,7 @@ const Resume = ({education,work}) => {
                     
                     )
                 })}
-                    <h3 className="resume-title">
-                        ABC company
-                    </h3>
-                    <p className="resume-description">Junior Developer</p>
-                    
+                  
                 </div>
 
 

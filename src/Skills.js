@@ -1,6 +1,7 @@
 import React from 'react'
 import './Skills.css'
 
+
 const Skills = ({skills}) => {
     
     return (
@@ -14,17 +15,24 @@ const Skills = ({skills}) => {
                 const {title,icon,level} = ski
                 
                 return(
-                    <div className="skill">
-                    <h4>{title}</h4>
                     
-                    {/* <div className="skills__imageContainer">
+                    <div className="skill" id="skills">
+                        <div className="skill__left">
+                        <h4>{title}</h4>
+                    
+                    <div className="skills__imageContainer">
                         <img src={icon} alt="icon" className="skills__image"/>
-                    </div> */}
-                    <div className="skills__container">
+                    </div>
+                            </div>
+                            <div className="skill__right">
+                            <div className="skills__container">
                         <div className="skills__level">
                             
                         </div>
                     </div>
+                                </div>
+                    
+                    
                 </div>
                 )
                   

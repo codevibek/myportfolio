@@ -6,7 +6,7 @@ import ArrowUpwardOutlinedIcon from '@material-ui/icons/ArrowUpwardOutlined';
 
 const Footer = () => {
     return (
-        <div className="footer">
+        <div className="footer" id="footer">
             <div className="footer__up">
 
             <ul className="footer-social">
@@ -29,7 +29,7 @@ const Footer = () => {
             </div>
 
 
-            <p>An attempt to make a portfolio </p>
+            <p>My portfolio, Follow me on the links above </p>
             
         </div>
     )

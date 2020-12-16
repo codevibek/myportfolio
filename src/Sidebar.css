@@ -1,0 +1,64 @@
+.sidebar{
+    display: none;
+}
+.nosidebar{
+    display: none;
+}
+
+@media screen and (max-width:600px){
+    .sidebar{
+        display: block;
+        height: 100%;
+        width: 100%;
+        background-color: rgb(32, 29, 29);
+        z-index: 5;
+        position: fixed;
+        align-items: center;
+        transition: 0.5s ease-in-out;
+        opacity: 100;
+        
+    }
+    .nosidebar{
+        display: none;
+    
+    }
+    
+    .sidebar-list{
+        display: flex;
+        width: 100%;
+        margin-top: -10px;
+        
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        font-style: none;
+       
+        
+    }
+    .sidebar-list > li{
+        margin-left:-40px ;
+        width: 100%;
+       
+        
+       
+    }
+    .sidebar-list > li:hover{
+        transform: scale(1.01);
+        background-color: rgb(44, 42, 42);
+        border: 1px solid rgb(56, 56, 59);
+       
+    }
+    
+    .sidebar-listItem{
+        text-decoration: none ;
+        text-align: center;
+      
+        font-size: 70px;
+        display: block;
+        color: #C57B57 ;
+        font-family: 'Dancing Script', cursive;
+        
+    
+    }
+}
+
