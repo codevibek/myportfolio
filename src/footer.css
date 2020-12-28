@@ -17,12 +17,13 @@
 .footer-social >li{
     margin: 3px;
 }
-.footer__upIcon{
-    margin-left: 100px;
+.footer__upIcon>a{
+    margin-left: 150px;
     margin-top: -25px;
+    text-decoration: none;
     color: #D68D69;
 }
-.footer__upIcon:hover{
+.footer__upIcon >a:hover{
     color: white;
     cursor: pointer;
     transform: scale(1.4);

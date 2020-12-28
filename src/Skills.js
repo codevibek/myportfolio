@@ -5,18 +5,18 @@ import './Skills.css'
 const Skills = ({skills}) => {
     
     return (
-        <div className="skills">
+        <div className="skills" id="skills">
             <div className="skills__title">
             <h2>Skills</h2>
             <hr/>
             </div>
             
             {skills?.map((ski)=>{
-                const {title,icon,level} = ski
+                const {title,icon,id,level} = ski
                 
                 return(
                     
-                    <div className="skill" id="skills">
+                    <div key={id} className="skill" >
                         <div className="skill__left">
                         <h4>{title}</h4>
                     
@@ -26,7 +26,7 @@ const Skills = ({skills}) => {
                             </div>
                             <div className="skill__right">
                             <div className="skills__container">
-                        <div className="skills__level">
+                        <div className="skills__level" style={{width:`${level}`}}>
                             
                         </div>
                     </div>

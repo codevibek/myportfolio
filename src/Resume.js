@@ -1,4 +1,3 @@
-import { CastForEducation } from '@material-ui/icons'
 import React from 'react'
 import './Resume.css'
 

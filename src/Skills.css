@@ -19,10 +19,11 @@
 }
 .skill__left{
     display: flex;
-    flex: 0.1;
+    width: 200px;
 }
 .skill__right{
-    flex:0.9;
+   
+    
 }
 .skills__imageContainer{
     margin-top: 18px;
@@ -40,7 +41,7 @@
     width: 300px;
     height: 25px;
     border: 1px solid white;
-    background: rgb(177, 166, 166);
+    background: whitesmoke;
     border-radius: 5px;
     margin: 20px 10px;
     

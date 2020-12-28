@@ -5,6 +5,7 @@ import About from'./About'
 import Skills from './Skills'
 import Resume from './Resume'
 import "./App.css"
+import Projects from './Projects'
 
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import axios from 'axios'
@@ -14,6 +15,7 @@ import Lower from './Lower'
 function App() {
   const [data, setData] = useState('')
   const [clicked, setClicked] = useState('false')
+
 
   const getData = () => {
     axios.get('Data.json')
@@ -25,10 +27,12 @@ function App() {
   }
   const handleHamClick = (e) => {
     e.preventDefault()
-    const isclicked = !clicked
-    setClicked(isclicked)
-    console.log(clicked)
+    
+    setClicked(!clicked)
+   
+   
 }
+
   useEffect(()=>{
     getData()
     
@@ -36,18 +40,17 @@ function App() {
 
     const {main,skills,navbar,education,work} = data
   
- console.log(skills)
-  
   return (
     <div className="App">
       
       <Router>
       <Navbar navbar={navbar} handleHamClick={handleHamClick}/>
-      <Sidebar navbar={navbar} clicked={clicked}/>
+      <Sidebar navbar={navbar} clicked={clicked}  />
       {/* <Home  main={main} /> */}
       <About main={main}/>
       
       <Resume education={education} work={work}/>
+      <Projects />
       <Lower skills={skills} />
       
       
@@ -60,6 +63,9 @@ function App() {
           </Route>
           <Route path = "#skills">
           <Skills />
+          </Route>
+          <Route path = "#projects">
+          <Projects />
           </Route>
         </Switch>
    

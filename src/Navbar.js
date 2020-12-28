@@ -1,5 +1,4 @@
-import React, {useState} from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react'
 import './Navbar.css'
 
 import MenuIcon from '@material-ui/icons/Menu';
@@ -9,9 +8,9 @@ const Navbar = ({navbar,handleHamClick}) => {
 
    
     return (
-        <div className="navbar">
+        <div className="navbar" id="navbar">
             <div className="navbar-button">
-                   <button>Suprise</button> 
+                   <button>Surprise</button> 
             </div>
             <nav>
                 <ul className="navbar-list">

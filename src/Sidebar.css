@@ -11,8 +11,9 @@
         height: 100%;
         width: 100%;
         background-color: rgb(32, 29, 29);
+        white-space: nowrap;
+        
         z-index: 5;
-        position: fixed;
         align-items: center;
         transition: 0.5s ease-in-out;
         opacity: 100;

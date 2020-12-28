@@ -45,11 +45,11 @@ const Home = ({main}) => {
         
       </div>
       
-      <Link to="#about" className="linkArrow">
+      <a href="#about" className="linkArrow">
           <ArrowDropDownCircleOutlinedIcon 
             style={{fontSize:40}}
             className="arrowDown"/>
-      </Link>
+      </a>
       </div>
     )
 }

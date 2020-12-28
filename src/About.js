@@ -1,7 +1,6 @@
 import React from 'react'
 import './About.css'
 import avatar from './avatar.jpg'
-import { Avatar } from '@material-ui/core';
 
 const About = ({main}) => {
     if (main){

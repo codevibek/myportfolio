@@ -1,3 +1,6 @@
+#resume{
+    height: fit-content;
+}
 .resume-topic{
     display: flex;
     margin: 10px;

@@ -1,4 +1,3 @@
-import Icon from '@material-ui/core/SvgIcon'
 import FaceBookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import YouTubeIcon from '@material-ui/icons/YouTube'

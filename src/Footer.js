@@ -23,8 +23,10 @@ const Footer = () => {
                <li><Link className="footer-socialList" to="www.github.com"><GitHubIcon /></Link></li> */}
 
             </ul>
-            <div className="footer__upIcon">
+            <div className="footer__upIcon"><a href="#home">
             <ArrowUpwardOutlinedIcon style={{fontSize:40}}/>
+            </a>
+            
             </div>
             </div>
 

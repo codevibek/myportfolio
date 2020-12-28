@@ -1,6 +1,5 @@
 import React from 'react'
 import './Sidebar.css'
-import {Link} from 'react-router-dom'
 
 const Sidebar = ({navbar,clicked}) => {
     return (
@@ -8,8 +7,9 @@ const Sidebar = ({navbar,clicked}) => {
             <ul className={clicked?"sidebar-list":"nosidebar-list"}>
                     {navbar?.map(nav=>{
                         const {id,link,title} = nav
-                        return( <li key={id}><Link className={clicked?"sidebar-listItem":"nosidebar-listItem"} to={link}>{title}</Link></li>
+                        return( <li key={id} ><a  className={(clicked)?"sidebar-listItem":"nosidebar-listItem"} href={link}>{title}</a></li>
                         )
+                        
                     })}
                    
                 </ul>
