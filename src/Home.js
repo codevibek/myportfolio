@@ -5,8 +5,8 @@ import social from './data'
 
 import ArrowDropDownCircleOutlinedIcon from '@material-ui/icons/ArrowDropDownCircleOutlined';
 const Home = ({main}) => {
-    const {name,work,address} = main
- const {country} = address
+    //  const {name,work,address} = main
+//  const {country} = address
   
  
   
@@ -18,10 +18,10 @@ const Home = ({main}) => {
          <div className="home-bannerText">
     
   
-  <h1 className="home-bannerHeadline">I'm <span>{name}</span>.</h1>
-  <h3>I'm a {country} based <span>{work}</span>.<br/></h3>
+  <h1 className="home-bannerHeadline">I'm <span>{main?.name}</span>.</h1>
+  <h3>I'm a {main?.address?.country} based <span>{main?.work}</span>.<br/></h3>
   <p> I specialize in React based development.</p>
-  <button>Hire Me</button>
+  <a href="#contact"><button >Hire Me</button></a>
 
             
             </div>

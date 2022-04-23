@@ -7,7 +7,7 @@ const Sidebar = ({navbar,clicked}) => {
             <ul className={clicked?"sidebar-list":"nosidebar-list"}>
                     {navbar?.map(nav=>{
                         const {id,link,title} = nav
-                        return( <li key={id} ><a  className={(clicked)?"sidebar-listItem":"nosidebar-listItem"} href={link}>{title}</a></li>
+                        return( <li key={id}   ><a  className="sidebar-listItem"  href={link}>{title}</a></li>
                         )
                         
                     })}

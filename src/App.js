@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect,useCallback} from 'react'
 import Navbar from './Navbar'
 import Home from './Home'
 import About from'./About'
@@ -6,6 +6,7 @@ import Skills from './Skills'
 import Resume from './Resume'
 import "./App.css"
 import Projects from './Projects'
+import Setup from './Setup'
 
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import axios from 'axios'
@@ -17,14 +18,18 @@ function App() {
   const [clicked, setClicked] = useState('false')
 
 
-  const getData = () => {
-    axios.get('Data.json')
+  useEffect(()=>{
+    getData()
+    
+  },[])
+  const getData =useCallback( async() => {
+    await axios.get('Data.json')
     .then(res=>{
       const data=res.data
       setData(data)
       
     })
-  }
+  },[])
   const handleHamClick = (e) => {
     e.preventDefault()
     
@@ -32,11 +37,15 @@ function App() {
    
    
 }
+const handleNavClick = (e) => {
+  e.preventDefault()
+  
+  setClicked(false)
+ 
+ 
+}
 
-  useEffect(()=>{
-    getData()
-    
-  },[])
+
 
     const {main,skills,navbar,education,work} = data
   
@@ -44,28 +53,23 @@ function App() {
     <div className="App">
       
       <Router>
-      <Navbar navbar={navbar} handleHamClick={handleHamClick}/>
-      <Sidebar navbar={navbar} clicked={clicked}  />
-      {/* <Home  main={main} /> */}
+      
+      
+      
+        <Switch>
+          <Route exact path="/">
+          <Navbar navbar={navbar} handleHamClick={handleHamClick}/>
+      <Sidebar navbar={navbar} clicked={clicked} handleNavClick={handleHamClick} />
+      <Home  main={main} />
       <About main={main}/>
       
       <Resume education={education} work={work}/>
       <Projects />
       <Lower skills={skills} />
-      
-      
-        <Switch>
-          <Route path="#about">
-            <About />
+
           </Route>
-          <Route path="#">
-            <Home />
-          </Route>
-          <Route path = "#skills">
-          <Skills />
-          </Route>
-          <Route path = "#projects">
-          <Projects />
+          <Route path="/setup">
+            <Setup/>
           </Route>
         </Switch>
    

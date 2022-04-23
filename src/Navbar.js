@@ -1,5 +1,6 @@
 import React from 'react'
 import './Navbar.css'
+import {Link} from 'react-router-dom'
 
 import MenuIcon from '@material-ui/icons/Menu';
 
@@ -10,7 +11,10 @@ const Navbar = ({navbar,handleHamClick}) => {
     return (
         <div className="navbar" id="navbar">
             <div className="navbar-button">
-                   <button>Surprise</button> 
+                <Link className="link" to="/setup">
+                <button>Surprise</button> 
+                </Link>
+                   
             </div>
             <nav>
                 <ul className="navbar-list">

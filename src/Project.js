@@ -16,14 +16,15 @@ const Projects = () => {
 
         
         <ReactCardFlip  flipSpeedBackToFront="1" flipSpeedFrontToBack="1" isFlipped={isFlipped} flipDirection="horizontal">
-        <div className="projects__card" onMouseLeave={handleClick}>
+        <div className="projects__cardFront" onMouseLeave={handleClick}>
           <img src={black} alt="app scrshot"/>
         </div>
  
-        <div className="projects__card" onMouseLeave={handleClick}>
+        <div className="projects__cardBack" onMouseLeave={handleClick}>
           <h4>Portfolio</h4>
            <p>one displayed right now</p>
-           <div className="projects__social">
+           <a href="#"><p>Link to App</p></a>
+           <div className="projects__social"> 
 
            
            {social?.map(soc=>{
